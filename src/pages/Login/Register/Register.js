@@ -3,6 +3,8 @@ import { Alert, Button, CircularProgress, Container, Grid, TextField, Typography
 import bg from '../../../assets/images/login.png'
 import { NavLink, useNavigate } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
+import Navigation from '../../../Shared/Navigation/Navigation';
+import Footer from '../../../Shared/Footer/Footer';
 
 const Resister = () => {
     const [loginData, setLoginData] = useState({})
@@ -27,7 +29,8 @@ const Resister = () => {
     }
     return (
         <div>
-            <Container>
+            <Navigation></Navigation>
+            <Container sx={{mt:"8em"}}>
                 <Grid container spacing={2}>
                     <Grid item md={6}>
 
@@ -105,6 +108,7 @@ const Resister = () => {
                     </Grid>
                 </Grid>
             </Container>
+            <Footer></Footer>
         </div>
     );
 };

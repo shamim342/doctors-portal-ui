@@ -1,0 +1,32 @@
+.banner-background {
+    width: 30vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -100;
+    background: #333;
+}
+
+.banner-text {
+    text-align: left;
+}
+
+.banner-img {
+    width: 300px;
+    height: auto;
+}
+
+@media only screen and (max-width: 640px) {
+    .banner-background {
+        display: none;
+    }
+    .banner-text {
+        text-align: center;
+    }
+    .banner-img {
+        width: 300px;
+        height: auto;
+        margin: 0 auto;
+    }
+}

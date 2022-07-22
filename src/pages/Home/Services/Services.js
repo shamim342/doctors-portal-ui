@@ -36,14 +36,13 @@ const Services = () => {
                     <Typography variant="h6" component="div" sx={{color:"success.main" , fontWeight:'700', m:'2'}}>
                         Our Service
                     </Typography>
-                    <Typography variant="h4" component="div" sx={{fontWeight:"600"}}>
+                    <Typography variant="h4" component="div" sx={{fontWeight:"600" , mb:"2em"}}>
                          Service we provide
                     </Typography>
-                    {/* <div style={{display:"flax" , justifyContent: 'center' , margin:"0 auto" , width:'90vw' , overflow:"none"}}> */}
-                    <Grid container columns={{ xs: 4, md: 12 }}>
+                    
+                    <Grid container spacing={2} columns={{ xs: 4, md: 12 }}>
                         {services.map(service => <Service service={service}></Service>)}
                     </Grid>
-                    {/* </div> */}
                 </Container>
             </Box>
         </>

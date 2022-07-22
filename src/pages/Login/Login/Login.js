@@ -4,6 +4,8 @@ import bg from '../../../assets/images/login.png'
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import GoogleIcon from '@mui/icons-material/Google';
 import useAuth from '../../../hooks/useAuth';
+import Navigation from '../../../Shared/Navigation/Navigation';
+import Footer from '../../../Shared/Footer/Footer';
 
 const Login = () => {
     const [loginData, setLoginData] = useState({})
@@ -28,7 +30,8 @@ const Login = () => {
     }
     return (
         <>
-            <Container>
+        <Navigation></Navigation>
+            <Container sx={{mt:"8em"}}>
                 <Grid container spacing={2}>
                     <Grid item md={6}>
 
@@ -95,6 +98,7 @@ const Login = () => {
                     </Grid>
                 </Grid>
             </Container>
+            <Footer></Footer>
         </>
     );
 };

@@ -1,0 +1,33 @@
+.appoinmentBanner-text {
+    text-align: left;
+}
+
+.appoinmentBanner-appoinment {
+    text-align: left;
+    margin-top: 2em!important;
+    /* background: tomato; */
+    color: #19D3AE;
+}
+
+.appoinmentBanner-btn {
+    background: #19D3AE;
+    margin-top: 2em;
+    width: 20vw;
+    color: #fff;
+}
+
+@media only screen and (max-width: 640px) {
+    .appoinmentBanner-text {
+        text-align: center;
+    }
+    .appoinmentBanner-appoinment {
+        text-align: center;
+        margin-top: 2em!important;
+        background: tomato;
+    }
+    .appoinmentBanner-btn {
+        background: tomato;
+        width: 10em;
+        margin: 0 auto;
+    }
+}

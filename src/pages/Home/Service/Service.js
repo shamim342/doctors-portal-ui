@@ -7,25 +7,22 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 const Service = (props) => {
-    const { description, img } = props.service;
+    const { img , name} = props.service;
     return (
-        <div>
+        <>
             <Grid item xs={12} md={4}>
-                <Card sx={{ minWidth: 275 , boxShadow:"0" }}>
+                <Card sx={{ minWidth: 275 , boxShadow:"3" , height:"200px" , background:"#fff" , padding:"1em"}}>
                     <CardMedia
                         component="img"
-                        style={{width:"auto" , height:"80px" ,margin:" 0 auto"}}
+                        style={{width:"auto" , height:"80px" ,margin:" 1em auto"}}
                         image={img}
                         alt="green iguana"
                     />
                     <CardContent>
                         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                            Word of the Day
+                            {name}
                         </Typography>
                         <Typography variant="h5" component="div">
-                        </Typography>
-                        <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                            {description}
                         </Typography>
                         <Typography variant="body2">
                             well meaning and kindly.
@@ -33,12 +30,10 @@ const Service = (props) => {
                             {'"a benevolent smile"'}
                         </Typography>
                     </CardContent>
-                    <CardActions>
-                        <Button size="small" sx={{margin:"0 auto" , backgroundColor:"#04e064"}}>Learn More</Button>
-                    </CardActions>
+                    
                 </Card>
             </Grid>
-        </div>
+        </>
     );
 };
 
